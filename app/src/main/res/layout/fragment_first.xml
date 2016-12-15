@@ -1,0 +1,66 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragmentFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.gokcedemir.secondhomework.FirstFragment">
+
+        <TextView android:id="@+id/adText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:text="Ad : "
+            android:layout_alignTop="@+id/adtextEdit"
+            android:layout_alignBottom="@+id/adtextEdit" />
+
+        <EditText android:id="@+id/adtextEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/adText"
+            android:layout_gravity="top"
+            android:gravity="right"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp" />
+
+        <EditText android:id="@+id/soyadtextEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/soyadText"
+            android:layout_below="@+id/adtextEdit"
+            android:layout_gravity="top"
+            android:gravity="right"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp" />
+
+        <Button android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Gönder"
+            android:layout_below="@+id/soyadText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp" />
+
+        <TextView android:id="@+id/soyadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:text="Soyad :"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/soyadtextEdit"
+            android:layout_alignBottom="@+id/soyadtextEdit" />
+
+ </RelativeLayout>
